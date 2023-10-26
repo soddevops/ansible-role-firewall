@@ -10,7 +10,11 @@ _firewall_packages:
       - ufw
     RedHat-7:
       - ufw
+    RedHat-9:
+      - ufw
     RedHat: []
+    OracleLinux:
+      - ufw
     Fedora:
       - ufw
     Suse:
@@ -24,6 +28,10 @@ _firewall_packages:
       - firewalld
       - iptables
       - iptables-services
+    RedHat-9:
+      - firewalld
+    OracleLinux:
+      - firewalld
     RedHat:
       - firewalld
     Fedora:
@@ -43,6 +51,7 @@ _firewall_service:
   CentOS-8: firewalld
   RedHat-7: firewalld
   RedHat-8: firewalld
+  OracleLinux: firewalld
   Fedora: firewalld
   openSUSE Leap: firewalld
 
